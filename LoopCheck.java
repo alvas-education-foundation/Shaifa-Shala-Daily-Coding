@@ -61,4 +61,12 @@ public class LinkedList {
         llist.push(20); 
         llist.push(4); 
         llist.push(15);
+        llist.push(10);
+        llist.head.next.next.next.next = llist.head;
+        if (detectLoop(head))
+            System.out.println("Loop found");
+        else
+            System.out.println("No Loop");
+    }
+}
     
